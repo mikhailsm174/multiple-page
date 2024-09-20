@@ -1,8 +1,375 @@
-.bgimage{
-    height: 500px;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+:root{
+	--info: #07C4D4;
+	--info-hover: #0BA9B6;
+	--dark: #010205;
+	--light: #FFFFFF;
+	--blue: #5FA2FF;
+	--blue-hover: #1657B0;
+}
+
+
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track{
+	background-color: var(--dark);
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: var(--info);
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: var(--info-hover);
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	list-style: none;
+	text-decoration: none;
+	outline-offset: none;
+	font-family: "Roboto", sans-serif;
+}
+
+.nav_logo{
+	margin-left: 3rem;
+}
+
+.nav_logo_img{
+    height: 35px;
+}
+
+.add_shop{
+    margin-right: 90px;
+}
+
+.add_shop_bag{
+    font-size: 20px;
+}
+
+.nav_collaps .navbar_ul{
+	/* padding-right: 20px; */
+	margin-bottom: 0;
+	transition: all .3s;
+}
+
+.navbar_positipon{
+	position: sticky;
+	top: 0;
+    background-color: white;
+	box-shadow: 0 1px 10px lightgray;
+}
+
+.navbar_li{
+	margin-right: 40px;
+}
+
+.navbar_li_a{
+	padding: 8px;
+	border-radius: 10px;
+	font-weight: 700;
+	transition: all .3s;
+	position: relative;
+}
+
+.navbar_li_a::after{
+	position: absolute;
+	left: 3px;
+	bottom: 5px;
+	content: "";
+	width: 100%;
+	height: 3px;
+	background-color: var(--dark);
+	transform: scale(0);
+	transition: transform .4s;
+	transform-origin: right;
+}
+
+.navbar_li_a:hover::after{
+	transform: scale(1);
+	transform-origin: left;
+}
+
+.nav_collaps{
+	position: relative;
+}
+
+.menu{
+	height: 25px;
+	width: 30px;
+	background-color: transparent;
+	position: relative;
+	display: none;
+	right: 15px;
+}
+
+.menu::before{
+	content: "";
+	height: 3px;
+	width: 100%;
+	background-color: var(--dark);
+	position: absolute;
+	top: 0;
+	transition: all .3s;
+}
+
+.menu::after{
+	content: "";
+	height: 3px;
+	width: 100%;
+	background-color: var(--dark);
+	position: absolute;
+	bottom: 0;
+	transition: all .5s;
+}
+
+.menu .middle_bar{
+	height: 3px;
+	width: 100%;
+	background-color: var(--dark);
+	position: absolute;
+	top: 45%;
+	transition: all .3s;
+}
+
+.menu.active.menu::after{
+	width: 90%;
+	transform: rotate(-45deg) translate(8px, -4px);
+}
+
+.menu.active.menu::before{
+	width: 90%;
+	transform: rotate(45deg) translate(11px, 8px);
+}
+
+.menu.active .middle_bar{
+	display: none;
+}
+
+@media screen and (max-width:870px){
+	.navbar_li_a{
+		padding: 5px;
+	}
+
+	.navbar_li{
+		margin-right: 30px;
+	}
+}
+
+@media screen and (max-width:768px){
+
+	.nav_collaps .navbar_ul{
+		background-color: var(--light);
+		display: inline-block;
+		line-height: 40px;
+		opacity: 0;
+		position: absolute;
+		padding: 0;
+		padding: 10px 0;
+		right: 0;
+		transform: translateX(0px);
+		text-align: center;
+		top: 100%;
+		width: 70px;
+		visibility: hidden;
+	}
+
+
+	.navbar_ul .navbar_li{
+		margin-right: 0;
+	}
+
+
+	.menu{
+		position: absolute;
+		display: block;
+	}
+
+
+	.small.navbar_ul{
+		display: block;
+		right: 0;
+		top: 100%;
+		transform: translateX(0px);
+		opacity: 1;
+		visibility: visible;
+		width: 100%;
+	}
+
+    .add_shop{
+        margin-right: 90px;
+    }
+	
+}
+
+@media screen and (max-width:425px){
+	.nav_logo{
+		margin-left: 1.5rem;
+	}
+
+	.menu{
+		right: 0;
+	}
+
+    .add_shop{
+        margin-right: 70px;
+    }
+
+    .home_section .home_section_content{
+        margin-left: 1.5rem;
+    }
+}
+
+
+/* =====================   home section start   ====================== */
+
+.home_section{
     background-image: url(./images/hero4.png);
-    background-position: center;
     background-size: cover;
-    background-attachment: scroll;
+    background-position: center;
+    height: 500px;
+    line-height: 5px;
+}
+
+.home_section_content{
+    height: 300px;
+    width: 350px;
+    margin-left: 3rem;
+    margin-top: 130px;
+}
+
+.home_section_content .home_section_h3{
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #8a8a8a;
+}
+
+.home_section_content .home_section_h2{
+    color: #068e9b;
+    font-size: 30px;
+}
+
+.home_section_content .home_section_h1{
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.home_section_content .home_section_p{
+    font-size: 12px;
+    color: rgb(153, 152, 151);
+}
+
+.home_section_btn{
+    padding: 15px;
+    border: 2px solid rgb(243, 141, 8);
+    transition: all .3s;
+    margin-top: 10px;
+}
+
+.home_section_btn:hover{
+    background-color: rgb(243, 141, 8);
+    color: rgb(255, 254, 253);
+}
+
+@media screen and (max-width:530px){
+    .home_section_content .home_section_h1{
+        font-size: 28px;
+    }
+
+    .home_section_content .home_section_h2{
+        font-size: 20px;
+    }
+
+    .home_section_content{
+        width: 270px;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .home_section{
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .home_section{
+        height: 280px;
+    }
+
+    .home_section .home_section_content{
+        margin-top: 60px;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:375px){
+    .home_section{
+        height: 250px;
+    }
+
+    .home_section_content .home_section_h3{
+        font-size: 10px;
+    }
+    
+    .home_section_content .home_section_h2{
+        font-size: 15px;
+    }
+    
+    .home_section_content .home_section_h1{
+        font-size: 20px;
+    }
+    
+    .home_section_content .home_section_p{
+        font-size: 10px;
+    }
+    
+    .home_section_btn{
+        padding: 12px;
+        font-size: 15px;
+        font-weight: bold;
+        border: 2px solid rgb(243, 141, 8);
+        transition: all .3s;
+        margin-top: 10px;
+    }
+}
+
+
+
+/*================== features section start ====================*/
+
+.features_section{
+    display: flex;
+    align-items: center;
+}
+
+.features_productss{
+    /* background-color: red; */
+}
+.features_col_one{
+    border: 2px solid lightgray;
+    height: 180px;
+    margin: 5px;
+    text-align: center;
+    padding-top: 12px;
+    border-radius: 5px;
+}
+
+.features_image{
+    margin-bottom: 10px;
+}
+
+.features_p{
+    background-color: rgb(252, 223, 150);
+    width: 80%;
+    padding: 5px;
+    margin: 0 auto;
 }
