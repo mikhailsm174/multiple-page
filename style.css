@@ -373,3 +373,15 @@
     padding: 5px;
     margin: 0 auto;
 }
+
+@media screen and (max-width:1200px){
+    .features_col_one{
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width:990px){
+    .features_col_one{
+        width: auto;
+    }
+}
