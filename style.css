@@ -66,6 +66,7 @@
 	top: 0;
     background-color: white;
 	box-shadow: 0 1px 10px lightgray;
+    z-index: 99;
 }
 
 .navbar_li{
@@ -351,9 +352,6 @@
     align-items: center;
 }
 
-.features_productss{
-    /* background-color: red; */
-}
 .features_col_one{
     border: 2px solid lightgray;
     height: 180px;
@@ -385,3 +383,187 @@
         width: auto;
     }
 }
+
+
+/* ===================  products card section start  ================== */
+
+.products_card_section{
+    margin-bottom: 60px;
+}
+
+.products_card_section_title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.products_card_section_title_p{
+    font-size: 12px;
+    color: #9e9d9d;
+}
+
+.card_bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.adidas{
+    font-size: 12px;
+    color: #9e9d9d;
+}
+
+.card_img_h{
+    height: 240px;
+}
+
+@media screen and (max-width:578px){
+    .card_img_h{
+        height: auto;
+    }
+
+    .clasic_dress_cards{
+        display: block;
+    }
+
+    .clasic_dress_card{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:425px){
+    
+    .products_card_section_title_p{
+        font-size: 10px;
+    }
+
+    .products_card_section_title_h2{
+        margin-bottom: 0;
+    }
+
+    .products_card_section{
+        margin-bottom: 30px;
+    }
+}
+
+
+/* ==========================  accessories section star  ============================ */
+
+.accessories_section{
+    background-image: url(./images/banner/b2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 45px;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.accessories_section_btn{
+    width: 150px;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: 0;
+    transition: all .3s;
+}
+
+.accessories_section_btn:hover{
+    background-color: rgb(196, 193, 193);
+}
+
+.accessories_h2_color{
+    color: red;
+}
+
+.accessories_section_h2{
+    margin-bottom: 30px;
+}
+
+.accessories_section_p{
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width:425px){
+    .accessories_section{
+        margin-bottom: 30px;
+    }
+
+    .accessories_section_h2{
+        font-size: 20px;
+    }
+
+    .accessories_section_btn{
+        width: 120px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .accessories_section{
+        padding: 20px;
+    }
+
+    .accessories_section_h2{
+        margin-bottom: 15px;
+    }
+}
+
+/* =====================  New Arrivals section start  ======================= */
+
+.new_arrivals_section{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width:425px){
+    .new_arrivals_section{
+        margin-bottom: 30px;
+    }
+
+}
+
+
+/* ===========================  clasic dress section start  ============================== */
+/* .clasic_dress_cards{
+    gap: 10px;
+} */
+
+
+.clasic_dress_card_one{
+    background-image: url(./images/banner/b17.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.clasic_dress_card_two{
+    background-image: url(./images/banner/b10.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.clasic_dress_card{
+    padding: 40px 20px;
+    color: white;
+}
+
+.clasic_dress_content_btn{
+    border: 0;
+    padding: 6px 15px;
+    background-color: #0BA9B6;
+    color: white;
+    transition: all .3s;
+}
+
+.clasic_dress_content_btn:hover{
+    background-color: #058a96;
+}
+
+
+/* @media screen and (max-width:425px){
+    .clasic_dress_cards{
+        display: block;
+    }
+
+    .clasic_dress_card{
+        width: 100%;
+    }
+} */
