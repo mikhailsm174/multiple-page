@@ -523,9 +523,10 @@
 
 
 /* ===========================  clasic dress section start  ============================== */
-/* .clasic_dress_cards{
-    gap: 10px;
-} */
+
+.clasic_dress_section{
+    margin-bottom: 50px;
+}
 
 
 .clasic_dress_card_one{
@@ -546,24 +547,55 @@
 }
 
 .clasic_dress_content_btn{
-    border: 0;
+    border: 2px solid #0BA9B6;
     padding: 6px 15px;
-    background-color: #0BA9B6;
     color: white;
     transition: all .3s;
+    background-color: transparent;
 }
 
-.clasic_dress_content_btn:hover{
-    background-color: #058a96;
+.clasic_dress_card:hover .clasic_dress_content_btn{
+    background-color: #0BA9B6;
 }
 
 
-/* @media screen and (max-width:425px){
-    .clasic_dress_cards{
-        display: block;
+@media screen and (max-width:768px){
+    .clasic_dress_h2{
+        font-size: 20px;
     }
 
-    .clasic_dress_card{
-        width: 100%;
+    .clasic_dress_p_two{
+        font-size: 12px;
     }
-} */
+
+    .clasic_dress_p_one{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .clasic_dress_section{
+        margin-bottom: 30px;
+    }
+}
+
+
+
+
+.seasonal_card{
+    background-position: center;
+    background-size: cover;
+    padding: 40px 20px;
+}
+
+.seasonal_card_one{
+    background-image: url(./images/banner/b7.jpg);
+}
+
+.seasonal_card_two{
+    background-image: url(./images/banner/b4.jpg);
+}
+
+.seasonal_card_three{
+    background-image: url(./images/banner/b18.jpg);
+}
