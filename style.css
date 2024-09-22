@@ -577,15 +577,20 @@
     .clasic_dress_section{
         margin-bottom: 30px;
     }
+
 }
 
 
+/* =======================  seasonal section start  ============================ */
 
+.seasonal_section{
+    margin-bottom: 50px;
+}
 
 .seasonal_card{
     background-position: center;
     background-size: cover;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 .seasonal_card_one{
@@ -593,9 +598,28 @@
 }
 
 .seasonal_card_two{
+    margin-right: 5px;
+    margin-left: 5px;
     background-image: url(./images/banner/b4.jpg);
 }
 
 .seasonal_card_three{
     background-image: url(./images/banner/b18.jpg);
+}
+
+
+@media screen and (max-width:578px){
+    .seasonal_cards_all{
+        display: block;
+    }
+
+    .seasonal_card_two{
+        margin: 5px 0 5px 0;
+    }
+}
+
+@media screen and (max-width:425px){
+    .seasonal_section{
+        margin-bottom: 30px;
+    }
 }
