@@ -167,6 +167,10 @@
 
 @media screen and (max-width:768px){
 
+    .nav_logo{
+		margin-left: 1.4rem;
+	}
+
 	.nav_collaps .navbar_ul{
 		background-color: var(--light);
 		display: inline-block;
@@ -213,7 +217,7 @@
 
 @media screen and (max-width:425px){
 	.nav_logo{
-		margin-left: 1.5rem;
+		margin-left: 10px;
 	}
 
 	.menu{
@@ -770,4 +774,72 @@
     text-align: center;
     margin-top: 50px;
     height: 60px;
+}
+
+.secured_pay{
+    width: -webkit-fill-available;
+    height: auto;
+}
+
+
+
+@media screen and (max-width:425px){
+    .footer_row{
+        display: block;
+        /* width: 100%; */
+    }
+
+    .download_all .download{
+        margin: 0;
+    }
+
+    .download.apple_store{
+        margin-right: 5px;
+    }
+
+    .footer_col{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer_col_install_app{
+        width: 100%;
+        text-align: center;
+    }
+
+    .download_img{
+        width: 95px;
+        height: 28px;
+    }
+
+    .copyright_check_p{
+        font-size: 12px;
+    }
+
+    .download_all{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .download_all{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .download{
+        padding: 0 0;
+        margin-right: 5px;
+    }
+
+    .download_img{
+        width: 110px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .download{
+        margin-top: 5px;
+    }
 }
