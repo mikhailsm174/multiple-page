@@ -700,8 +700,8 @@
 
     .input-wrapper .signup_btn{
         width: 30%;
-        font-size: 12px;
-        padding: 12px;
+        font-size: 11px;
+        padding: 14px;
     }
 
     .signup_section{
@@ -779,6 +779,10 @@
 .secured_pay{
     width: -webkit-fill-available;
     height: auto;
+}
+
+.download_all{
+    margin-top: 18px;
 }
 
 
