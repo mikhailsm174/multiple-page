@@ -231,6 +231,10 @@
     .home_section .home_section_content{
         margin-left: 1.5rem;
     }
+
+    .navbar_li_a::after{
+        display: none;
+    }
 }
 
 
