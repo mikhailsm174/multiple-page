@@ -633,7 +633,7 @@
 /* =========================  Sign-up section start  ============================ */
 
 .signup_section{
-    background-image: url(./images/banner/b1.jpg);
+    background-image: url(./images/about/banner.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -895,13 +895,14 @@
     text-decoration: none;
     display: inline-block;
     /* border-bottom: 1px solid black; */
+    margin-bottom: 10px;
     transition: 0.3s;
 }
 
 .product-info p {
     font-size: 14px;
     color: #777;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .product-info h2 {
@@ -947,6 +948,26 @@
     .category_section{
         margin-bottom: 30px;
     }
+
+    .product-info p{
+        margin-bottom: 0;
+    }
+
+
+    .product-card{
+        /* display: grid; */
+        display: inline-table;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .product-image {
+        width: 100%;
+    }
+
+    .product-info{
+        width: 100%;
+    }
 }
 
 
@@ -964,4 +985,15 @@
 
 .about_home_content{
     padding: 50px;
+}
+
+@media screen and (max-width:425px){
+    .about_home_section{
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .about_home_content{
+        padding: 20px;
+    }
 }
