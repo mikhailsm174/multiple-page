@@ -1000,4 +1000,36 @@
     .about_home_content{
         padding: 20px;
     }
+
+}
+
+
+/* ======================  shop section start  ======================== */
+
+
+.shop_home_section{
+    background-image: url(./images/banner/b16.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 60px;
+}
+
+.shop_home_content{
+    padding: 50px;
+}
+
+
+
+@media screen and (max-width:425px){
+    .shop_home_section{
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    .shop_home_section .shop_home_content{
+        padding: 20px;
+    }
 }
