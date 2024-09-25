@@ -6,4 +6,3 @@ menuBtn.addEventListener('click', ()=>{
 	menuBtn.classList.toggle('active');
 	navbarUl.classList.toggle('small');
 })
-
