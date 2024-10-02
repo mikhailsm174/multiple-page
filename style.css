@@ -1046,7 +1046,7 @@
 }
 
 .main_img_row{
-    width: 90%;
+    width: 100%;
 }
 
 .single_main_img{
@@ -1055,7 +1055,15 @@
 
 .img_sz{
     height: auto;
+    width: 23%;
+    cursor: pointer;
+}
+
+.small_img_row{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
 }
 
 /* .small_imgs{
